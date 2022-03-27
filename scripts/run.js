@@ -1,3 +1,5 @@
+// Code which runs and utilizes the smart contracts
+
 const main = async () => {
     const [owner, randomPerson] = await hre.ethers.getSigners();
     const waveContractFactory = await hre.ethers.getContractFactory(
