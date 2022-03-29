@@ -1,9 +1,9 @@
-// Code to create and deploy a local blockchain running live over localhost
+// Code to create and deploy the smart contract on a blockchain network
 
 const main = async () => {
     const waveContractFactory = await hre.ethers.getContractFactory("WavePortal");
     const waveContract = await waveContractFactory.deploy({
-      value: hre.ethers.utils.parseEther("0.001"),
+      value: hre.ethers.utils.parseEther("0.01"),
     });
   
     await waveContract.deployed();
